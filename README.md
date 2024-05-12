@@ -70,7 +70,7 @@ Whatever you pass in gets merged with the default.
 
 Example:
 
-```vue
+```ts
 <DateTimePicker
   :ui="{
     content: {
@@ -229,3 +229,9 @@ const datePickerUiStyling: DatePickerUiStyling = {
   },
 };
 ```
+
+## Todos
+- Dark Theme
+- More props, for example 'clearable'
+- Date Range
+- Multi-Dates
