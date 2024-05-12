@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  myModule: {},
+  modules: ["../src/module", "@nuxtjs/tailwindcss"],
+  Vue3BetterPick: {},
   devtools: { enabled: true },
-})
+});
