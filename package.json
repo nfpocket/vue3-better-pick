@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "vue3-better-pick",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "Vue3 Datepicker component (tailwindcss)",
+  "repository": "nfpocket/vue3-better-pick",
   "license": "MIT",
   "type": "module",
   "exports": {
