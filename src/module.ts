@@ -16,13 +16,17 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(_options, nuxt) {
     const resolver = createResolver(import.meta.url);
 
-    nuxt.options.css.push(resolver.resolve("./tailwind.min.css"));
+    nuxt.options.css.push(resolver.resolve("./output.css"));
+
+    nuxt.options.modules.push(
+      "@nuxtjs/tailwindcss",
+      "nuxt-icon",
+    );
 
     await installModule("nuxt-icon");
     await installModule("@nuxtjs/tailwindcss", {
       configPath: resolver.resolve("./runtime/tailwind.config.js"),
-    }
-    );
+    });
     await addComponentsDir({
       path: resolver.resolve("./runtime/components"),
       pathPrefix: false,
