@@ -1,6 +1,6 @@
 {
   "name": "vue3-better-pick",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Vue3 Datepicker component (tailwindcss)",
   "repository": "nfpocket/vue3-better-pick",
   "license": "MIT",
