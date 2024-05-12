@@ -1,5 +1,7 @@
 # Vue3BetterPick (Tailwindcss)
 
+[StackBlitz Demo](https://stackblitz.com/edit/vue3-better-pick?file=nuxt.config.ts,app.vue)
+
 ## Usage
 
 ```vue
