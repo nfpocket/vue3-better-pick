@@ -4,6 +4,7 @@ import {
   defineNuxtModule,
   installModule,
 } from "@nuxt/kit";
+import installTailwind from "./tailwind";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -18,12 +19,10 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(_options, nuxt) {
     const resolver = createResolver(import.meta.url);
 
-    await installModule("@nuxtjs/tailwindcss", {
-      configPath: resolver.resolve("../tailwind.config"),
-    });
     await installModule("nuxt-icon");
+    await installTailwind(nuxt, resolver.resolve);
 
-    nuxt.options.modules.push("@nuxtjs/tailwindcss", "nuxt-icon");
+    // nuxt.options.modules.push("@nuxtjs/tailwindcss", "nuxt-icon");
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     await addComponentsDir({
