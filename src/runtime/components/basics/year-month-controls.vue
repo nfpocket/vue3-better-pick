@@ -1,5 +1,5 @@
 <template>
-  <div class="controls flex items-center justify-between">
+  <div :class="cn(styling.wrapper)">
     <div :class="cn(styling.monthYear.wrapper)">
       <MonthSelectPopover
         v-model:monthNumber="monthNumber"
@@ -13,25 +13,11 @@
       />
     </div>
 
-    <div class="flex items-center">
-      <button
-        :class="
-          cn(
-            'rounded-full hover:bg-blue-500/25 p-1 aspect-square w-8 h-8 flex items-center justify-center'
-          )
-        "
-        @click="previousMonth"
-      >
+    <div :class="cn(styling.navigation.wrapper)">
+      <button :class="cn(styling.navigation.button)" @click="previousMonth">
         <Icon size="1.25rem" name="i-tabler-chevron-left" />
       </button>
-      <button
-        :class="
-          cn(
-            'rounded-full hover:bg-blue-500/25 p-1 aspect-square w-8 h-8 flex items-center justify-center'
-          )
-        "
-        @click="nextMonth"
-      >
+      <button :class="cn(styling.navigation.button)" @click="nextMonth">
         <Icon size="1.25rem" name="i-tabler-chevron-right" />
       </button>
     </div>

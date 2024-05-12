@@ -11,10 +11,15 @@ export type DatePickerYearStyling = {
 };
 
 export const defaultDatePickerYearStyling: DatePickerYearStyling = {
-  button: "rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
+  button:
+    "rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
   content: {
     wrapper: "p-1 bg-white shadow-md grid grid-cols-4 gap-2 overflow-auto h-64",
-    button: { base: "text-center rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1", active: "", current: "" },
+    button: {
+      base: "text-center rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
+      active: "",
+      current: "",
+    },
   },
 };
 
@@ -31,10 +36,15 @@ export type DatePickerMonthStyling = {
 };
 
 export const defaultDatePickerMonthStyling: DatePickerMonthStyling = {
-  button: "rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
+  button:
+    "rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
   content: {
     wrapper: "p-1 bg-white shadow-md grid grid-cols-3 gap-2 overflow-auto h-64",
-    button: { base: "text-center rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1", active: "", current: "" },
+    button: {
+      base: "text-center rounded-md hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1",
+      active: "",
+      current: "",
+    },
   },
 };
 
@@ -64,7 +74,8 @@ export const defaultDatePickerControlsStyling: DatePickerControlsStyling = {
   monthYear: defaultDatePickerMonthYearStyling,
   navigation: {
     wrapper: "flex items-center",
-    button: "rounded-full hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1 aspect-square w-6 h-6 flex items-center justify-center",
+    button:
+      "rounded-full hover:bg-[color:rgba(var(--better-pick-primary)/0.25)] p-1 aspect-square w-8 h-8 flex items-center justify-center",
   },
 };
 
@@ -131,8 +142,10 @@ export type DatePickerUiStyling = {
 
 export const defaultDatePickerUiStyling: DatePickerUiStyling = {
   trigger: {
-    wrapper: "border border-black rounded-md p-1 focus-within:border-[color:var(--better-pick-primary)]",
-    input: "w-full focus:border-none focus:ring-0 focus:outline-none bg-transparent",
+    wrapper:
+      "border border-black rounded-md p-1 focus-within:border-[color:var(--better-pick-primary)]",
+    input:
+      "w-full focus:border-none focus:ring-0 focus:outline-none bg-transparent",
   },
   content: {
     wrapper: "p-1 bg-white shadow-md",

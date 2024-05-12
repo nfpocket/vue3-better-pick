@@ -50,7 +50,7 @@ const props = withDefaults(
     type: "datetime",
     placeholder: "Datum auswählen",
     invalidDateText: "Ungültiges Datum",
-    format: "dd.MM.yyyy",
+    format: "dd.MM.yyyy HH:mm",
   }
 );
 

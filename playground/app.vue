@@ -7,6 +7,20 @@
         type="datetime"
         format="dd.MM.yyyy HH:mm"
         @update:modelValue="console.log"
+        :ui="{
+          content: {
+            picker: {
+              date: {
+                controls: {
+                  navigation: {
+                    button:
+                      'rounded-full hover:bg-red-500 p-1 aspect-square w-8 h-8 flex items-center justify-center',
+                  },
+                },
+              },
+            },
+          },
+        }"
       />
     </label>
     <label>

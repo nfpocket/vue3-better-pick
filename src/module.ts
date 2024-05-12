@@ -21,6 +21,7 @@ export default defineNuxtModule<ModuleOptions>({
     await installModule("@nuxtjs/tailwindcss", {
       configPath: resolver.resolve("../tailwind.config"),
     });
+    await installModule("nuxt-icon");
 
     nuxt.options.modules.push("@nuxtjs/tailwindcss", "nuxt-icon");
 
@@ -30,6 +31,6 @@ export default defineNuxtModule<ModuleOptions>({
       pathPrefix: false, // Prefix component name by its path.
       prefix: "", // Prefix all matched components.
       global: true, // Registers components to be globally available.
-      });
+    });
   },
 });
