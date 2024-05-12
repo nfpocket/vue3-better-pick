@@ -33,13 +33,13 @@ export default async function installTailwind(
       module.exports = {
         content: [
             ${JSON.stringify(
-              resolve(runtimeDir, "components/**/*.{vue,js,ts,jsx,tsx}")
+              resolve(runtimeDir, "components/**/*.{vue,js,ts,jsx,tsx,mjs}")
             )},
             ${JSON.stringify(
-              resolve(runtimeDir, "utils/**/*.{vue,js,ts,jsx,tsx}")
+              resolve(runtimeDir, "utils/**/*.{vue,js,ts,jsx,tsx,mjs}")
             )},
             ${JSON.stringify(
-              resolve(runtimeDir, "types/**/*.{vue,js,ts,jsx,tsx}")
+              resolve(runtimeDir, "types/**/*.{vue,js,ts,jsx,tsx,mjs}")
             )},
         ]
       }
