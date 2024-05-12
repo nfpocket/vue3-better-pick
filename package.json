@@ -17,8 +17,7 @@
     "dist"
   ],
   "scripts": {
-    "generate-tailwind": "npx tailwindcss -i src/runtime/assets/css/tailwind.css -o ./src/output.css --minify",
-    "prepack": "nuxt-module-build build",
+    "prepack": "nuxt-module-build build && tailwindcss -i src/runtime/assets/css/tailwind.css -o ./dist/output.css --minify",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "pnpm run generate-tailwind && nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
