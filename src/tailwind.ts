@@ -19,7 +19,7 @@ export default async function installTailwind(
 
   // 2. add config template
   const configTemplate = addTemplate({
-    filename: "datepicker-tailwind.config.cjs",
+    filename: "vue3-better-pick-tailwind.config.cjs",
     write: true,
     getContents: ({ nuxt }) => `
       module.exports = {
